@@ -18,6 +18,7 @@ import java.io.File;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.Objects;
 import java.util.ResourceBundle;
 import java.net.URL;
 import javafx.scene.image.Image;
@@ -38,9 +39,8 @@ public class LoginController implements Initializable{
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle){
-        File brandingFile = new File("resources/866.jpg");
-        Image brandingImage = new Image(brandingFile.toURI().toString());
-        brandingImageView.setImage(brandingImage);
+        Image img = new Image(Objects.requireNonNull(getClass().getClassLoader().getResourceAsStream("resources/866.jpg")));
+        brandingImageView.setImage(img);
     }
 
     public void CancelButtonOnAction(ActionEvent event){
