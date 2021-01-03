@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" prefHeight="324.0" prefWidth="479.0" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="324.0" prefWidth="450.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <ImageView fx:id="brandingImageView" fitHeight="324.0" fitWidth="503.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../resources/866.jpg" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="117.0" layoutX="59.0" layoutY="104.0" stroke="WHITE" strokeType="INSIDE" width="155.0" />
+            <JFXTextField fx:id="usernameField" focusColor="#ff2d9b" labelFloat="true" layoutX="35.0" layoutY="136.0" prefHeight="25.0" prefWidth="155.0" promptText="Username" unFocusColor="#3a6cab">
+               <font>
+                  <Font name="Serif Regular" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="passwordField" focusColor="#ff2d9b" labelFloat="true" layoutX="35.0" layoutY="186.0" prefHeight="25.0" prefWidth="155.0" promptText="Password" stylesheets="@styles.css" unFocusColor="#3a6cab" />
+            <Label layoutX="53.0" layoutY="78.0" stylesheets="@styles.css" text="LOGIN" textFill="#3a6cab">
+               <font>
+                  <Font name="Georgia Bold" size="33.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="loginButton" layoutX="88.0" layoutY="241.0" onAction="#loginButtonOnAction" text="Log In" textFill="#ff2d9b" />
+            <JFXButton fx:id="closeButton" layoutX="451.0" layoutY="14.0" onAction="#CancelButtonOnAction" text="X" textFill="#ff2d9b" />
+            <Label fx:id="loginMessageLabel" alignment="CENTER" layoutX="21.0" layoutY="221.0" prefHeight="17.0" prefWidth="183.0" textFill="#ff2d9b" />
+            <JFXButton fx:id="signupButton" layoutX="243.0" layoutY="276.0" onAction="#registerForm" text="Sign Up" textFill="#ff2d9b" />
+            <Label layoutX="165.0" layoutY="280.0" text="No account?" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

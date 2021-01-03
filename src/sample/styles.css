@@ -1,0 +1,18 @@
+@font-face {
+    -fx-font-family: "Georgia Bold";
+    src: url("/resources/georgiab.ttf");
+}
+
+@font-face {
+    -fx-font-family: "sans-serif";
+    src: url("/resources/micross.ttf");
+}
+
+.jfx-text-field, .jfx-password-field {
+    -fx-prompt-text-fill: BLACK;
+    font-family: "sans-serif";
+}
+
+.label{
+    font-family: "sans-serif";
+}
