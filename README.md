@@ -6,4 +6,4 @@ Requires SQL,
     root <br />
     8080 </i>
     
-<b>Needs more onput sanitation to prevent SQLi.</b>
+<b>Needs more input sanitation to prevent SQLi.</b>
